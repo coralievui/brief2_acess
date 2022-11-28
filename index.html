@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/769e0c012e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Le potager éveillé</title>
+</head>
+
+<body>
+    <section class="mainAcess">
+        <p class="fastMain"><a href="#main">Accéder au contenu principal</a></p>
+    </section>
+    <header role="banner">
+        <div aria-label="logo Le potager Eveillé" class="flexRowCenter">
+            <i class="fa-solid fa-carrot fa-2xl" aria-hidden="true"></i>
+            <h1>Le potager Eveillé</h1>
+            <i class="fa-solid fa-apple-whole fa-2xl" aria-hidden="true"></i>
+        </div>
+        <nav role="navigation" aria-label="menu">
+            <ul class="no-bullets flexRowNav">
+                <li><a href="#qui">Qui se cache derrière le Potager éveillé ?</a></li>
+                <li><a href="#agenda">L'agenda du potager éveillé</a></li>
+                <li><a href="#formation">S'inscrire à une formation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section>
+            <h2 id="qui">Qui se cache derrière le Potager éveillé ?</h2>
+            <div class="flexRow">
+                <div class="flexRowContentImg">
+                    <img src="./assets/philippe.jpg" alt="Photo de Philippe par Filipp
+                    Romanovski pour Unsplash">
+                </div>
+                <div class="flexRowContent">
+                    <p>Salut à vous, moi c'est Philippe !</p>
+                    <p>Le potager c'est une passion que je tiens de mon grand-père.
+                        Depuis tout petit j'ai mis les mains dans la terre avec lui.
+                        A l'époque je trouvais déjà ça incroyable de voir la nature grandir sous mes yeux.
+                        Ca n'a pas changé !</p>
+                    <p>Comme mon grand-père, j'aime partager mon amour de la nature, c'est pourquoi j'organise des <a
+                            href="#agenda">formations</a>
+                        sur la gestion du potager. <a href="#formation">Venez y faire un tour !</a></p>
+                    <figure role="group" aria-label="Présentation audio de Philippe">
+                        <figcaption>Ecouter la présentation audio</figcaption>
+                        <audio controls src="assets/presentation-philippe.ogg">
+                        </audio>
+                    </figure>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section>
+            <h2 id="agenda">L'agenda des formations du Potager éveillé</h2>
+            <table id="agenda-table">
+                <caption>Dates des prochaines sessions</caption>
+                <thead>
+                    <tr>
+                        <th role="columnheader">Date</th>
+                        <th role="columnheader">Sujet</th>
+                        <th role="columnheader">Lieu</th>
+                        <th role="columnheader">Places restantes</th>
+                        <th role="columnheader">S'inscrire !</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th role="rowheader">7 et 8 Mai</th>
+                        <td>Le buzz de la permaculture</td>
+                        <td><a href="https://www.hermitagelelab.com/">Au fablab rural de l'Hermitage</a></td>
+                        <td>3</td>
+                        <td><button id="7mai">Je m'inscris</button></td>
+                    </tr>
+                    <tr>
+                        <th role="rowheader">28 et 29 Mai</th>
+                        <td>Associer ses cultures</td>
+                        <td>Chez moi à Juvignac</td>
+                        <td>5</td>
+                        <td><button id="28mai">Je m'inscris</button></td>
+                    </tr>
+                    <tr>
+                        <th role="rowheader">11 et 12 Juin</th>
+                        <td>Partager ses productions</td>
+                        <td><a href="https://www.hermitagelelab.com/">Au fablab rural de l'Hermitage</a></td>
+                        <td>9</td>
+                        <td><button id="11juin">Je m'inscris</button></td>
+                    </tr>
+                    <tr>
+                        <th role="rowheader">2 et 3 Juillet</th>
+                        <td>Gérer l'irrigation</td>
+                        <td>Chez moi à Juvignac</td>
+                        <td>12</td>
+                        <td><button id="2juillet">Je m'inscris</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+
+            <h2 id="formation">Formulaire d'inscription à la formation</h2>
+            <form id="inscription-form" method="POST" autocomplete="on">
+                <fieldset role="group">
+                    <legend>Information sur vous</legend>
+                    <div> <label for="nom">Nom (*)</label>
+                        <input type="text" id="nom" name="nom" required minlength="2" maxlength="20" size="30" required
+                            autocomplete="name">
+
+                        <label for="prenom">Prénom (*)</label>
+                        <input type="text" id="prenom" name="prenom" autocomplete="name" required minlength="4"
+                            maxlength="20" size="30">
+
+                    </div>
+                    <div> <label for="phone">Téléphone (*)</label>
+                        <input type="phone" id="phone" name="phone" size="30" autocomplete="tel" required>
+
+                        <label for="prenom">Email (*)</label>
+                        <input type="email" id="mail" name="mail" size="30" autocomplete="email" required>
+                    </div>
+
+                </fieldset>
+                <fieldset role="group">
+                    <legend>Session(s) souhaitée(s)</legend>
+                    <div>
+                        <label for="date-input">Date (*)</label>
+                        <select id="date-input">
+                            <option id="date"></option>
+                            <option>7 et 8 Mai</option>
+                            <option>28 et 29</option>
+                            <option>11 et 12 Juin</option>
+                            <option>2 et 3 Juillet</option>
+                        </select>
+                </fieldset>
+                <button type="submit">Envoyer !</button>
+            </form>
+        </section>
+
+        <section class="localisation">
+            <h2>Comment nous rejoindre ?</h2>
+            <h3>Rejoindre la ferme</h3>
+            <p>Situé à Juvignac(34 - Hérault)</p>
+            <div class="transport">
+                <h4>Par le train</h4>
+                <ol>
+                    <li>Arrivée à Montpellier Saint Roch</li>
+                    <li>Prendre le tram 2 jusqu'à l'arrêt Juvignac</li>
+                </ol>
+            </div>
+            <div class="transport">
+
+                <h4>En voiture</h4>
+                <ul>
+                    <li>Depuis Toulouse : A9 > A709 direction Montpellier (sortie 33)</li>
+                    <li>Depuis Lodève : A75 direction Montpellier</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <h3>Réseaux sociaux</h3>
+        <ul class="no-bullets">
+            <li><a href="https://facebook.com"><i class="fab fa-facebook fa-xl" role="image"
+                        alt="Nous retrouver sur Facebook"></i></a></li>
+            <li><a href="https://twitter.com"> <i class="fab fa-twitter fa-xl" role="image"
+                        alt="Nous retrouver sur Twitter"></i></a></li>
+            <li><a href="https://linkedin.com"><i class="fab fa-linkedin fa-xl" role="image"
+                        alt="Nous retrouver sur LinkedIn"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

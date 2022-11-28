@@ -1,0 +1,226 @@
+html {
+    margin: 0;
+    background-color: #F5F5F6;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: burlywood;
+    max-width: 1440px;
+    font-weight: 400;
+    margin: 0 auto!important;
+    width: 90%;
+    color: #000;
+}
+
+a{
+    color: inherit;
+    text-decoration: underline;
+}
+
+h1,h2,h3{
+    margin: .5rem 0;
+}
+
+header, main, footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+header,footer{
+    width: 100%;
+}
+
+i{
+    padding: 1rem;
+}
+
+.mainAcess{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    background-color: #F5F5F6;
+}
+
+.fastMain,.creditPhoto{
+    font-size: .75rem;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flexRowContentImg{
+    width: 40%;
+}
+
+.flexRowContent{
+    width: 50%;
+}
+
+.flexRowNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+header li{
+    padding: .25vw; 
+    background-color: #FFF;
+    margin: 0.25vw 1.5vw;
+    width: 35%;
+    border-radius: 4px;
+    text-align: center;
+}
+
+main{
+    margin: 0 5rem;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+audio{
+    width: 100%;
+}
+
+figcaption, caption{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+img{
+    margin: .5rem;
+    width: 90%;
+}
+
+p{
+    padding: .25rem;
+}
+
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+    border-radius: 3px;
+    background-color: #FFF;
+}
+
+th,
+tr,
+td {
+    border: 1px solid black;
+    padding: 5px
+}
+
+
+input:valid.touched {
+    box-shadow: 0 0 10px green;
+}
+
+input:invalid.touched {
+    box-shadow: 0 0 10px red;
+}
+
+.localisation{
+    background-color: #fff;
+}
+
+.transport{
+    width: 100%;
+}
+
+
+
+.footer ul {
+    display: flex;
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 768px){
+
+body{
+    width: 100%;
+}
+main{
+    margin: 0;
+    padding: 0 .25rem;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+main section {
+    align-items: flex-start;
+    width: 95%;
+}
+    
+.flexRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContentImg{
+    width: 100%;
+}
+
+.flexRowContent{
+    width: 100%;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+table{
+    overflow-x: scroll;
+}
+caption{
+    text-align: left;
+}
+form{
+    width: 100%;
+}
+.localisation{
+    width: 95%;
+    padding: 0 .5rem;
+}
+
+}
